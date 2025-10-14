@@ -1,28 +1,11 @@
 README del Proyecto Juled Toys
 Plataforma Web Juled Toys publicada en GitHub Pages.
 Este repositorio contiene el desarrollo del sistema web Juled Toys, construido con HTML, CSS, JavaScript y tecnologías modernas. El backend se trabaja con Java JDK 21.
+
 ⚙️ Requisitos de entorno
 •	- Java JDK 21 (obligatorio para compilar y ejecutar el backend)
 •	- Git instalado y configurado
-🚀 Cómo ejecutar el proyecto
-1.	1. Clonar el repositorio:
-git clone https://github.com/<USUARIO>/<REPO>.git
-cd <REPO>
-👥 Buenas prácticas de colaboración
-•	- No trabajar directamente en la rama 'main'
-📌 Archivos de configuración importantes
-•	- .gitignore → Ignora archivos de compilación, IDE y temporales
-•	- .gitattributes → Consistencia en finales de línea y binarios
-•	- README.md → Este archivo con reglas y guía del proyecto
-❗ No borrar ni modificar estos archivos sin consenso del equipo
-📝 Reglas adicionales
-•	- No subir archivos de compilación (target/, build/, etc.)
-•	- No subir configuraciones de IDE locales (.idea/, .vscode/)
-•	- No subir credenciales ni archivos .env
-•	- Verificar antes de hacer commit:
-git status
-•	- Para ver cambios a detalle:
-git diff
+
 🔄 Flujo para contribuir mediante Fork
 1. Hacer fork del repositorio original en GitHub
 2. Clonar tu fork:
@@ -43,4 +26,23 @@ git push origin feature/nueva-funcionalidad
 git checkout main
 git pull upstream main
 git push origin main
+
+👥 Buenas prácticas de colaboración
+•	- No trabajar directamente en la rama 'main'
+
+📌 Archivos de configuración importantes
+•	- .gitignore → Ignora archivos de compilación, IDE y temporales
+•	- .gitattributes → Consistencia en finales de línea y binarios
+•	- README.md → Este archivo con reglas y guía del proyecto
+❗ No borrar ni modificar estos archivos sin consenso del equipo
+
+📝 Reglas adicionales
+•	- No subir archivos de compilación (target/, build/, etc.)
+•	- No subir configuraciones de IDE locales (.idea/, .vscode/)
+•	- No subir credenciales ni archivos .env
+•	- Verificar antes de hacer commit:
+git status
+•	- Para ver cambios a detalle:
+git diff
+
 
