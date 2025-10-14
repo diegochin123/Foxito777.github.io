@@ -1,0 +1,435 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #fef6dc;
+}
+
+/* Navbar y branding */
+.navbar-brand {
+    font-family: 'Lilita One', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Carousel y títulos */
+.carousel-item h1, .carousel-item h5, .carousel-item h6 {
+    font-family: 'Lilita One', cursive;
+}
+.carousel-item p, .fs-5 {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Colores y botones */
+.bg-warning {
+    background-color: #ff6f00 !important;
+}
+.bg-info {
+    background-color: #35c4f0 !important;
+}
+.btn-warning, .btn-outline-warning {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #fff;
+}
+.btn-warning:hover, .btn-outline-warning:hover {
+    background-color: #ffa726;
+    border-color: #ffa726;
+}
+.btn-primary {
+    background-color: #a12d63;
+    border-color: #a12d63;
+}
+.btn-primary:hover {
+    background-color: #c2185b;
+    border-color: #c2185b;
+}
+.card-title, .display-6 {
+    font-family: 'Lilita One', cursive;
+}
+footer {
+    font-size: 1rem;
+}
+footer h5 {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.2rem;
+}
+footer .btn-success {
+    font-size: 1rem;
+}
+
+/* --- Accesorios / categorías circulares --- */
+.category-circle img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    margin-bottom: 4px;
+    transition: box-shadow .2s;
+}
+.category-circle span {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+.category-circle:hover img {
+    box-shadow: 0 6px 18px #ffb80066;
+}
+.sticky-top {
+    z-index: 1020;
+}
+
+/* Accesorios cards y productos */
+#productos .card {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.07);
+    border-radius: 14px;
+    background: #fff;
+    text-align: center;
+}
+#productos .card img {
+    width: 80%;
+    max-width: 180px;
+    margin: 0 auto 8px;
+    object-fit: contain;
+}
+#productos .card-title {
+    font-size: 1.09em;
+    margin-bottom: 2px;
+}
+#productos .card-text {
+    font-size: 1.06em;
+}
+.precio-original {
+    text-decoration: line-through;
+    color: #b8b8b8;
+    font-size: 0.93em;
+    margin-left: 5px;
+}
+.descuento {
+    color: #f9ee8c;
+    font-size: 0.98em;
+    font-weight: bold;
+    margin-left: 7px;
+}
+
+/* --- Buscar resultados estilos --- */
+.productos-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 32px 0;
+}
+.producto-card {
+    border: 2px solid #ff9100;
+    border-radius: 14px;
+    padding: 18px;
+    width: 260px;
+    background: #fffbe7;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(255, 111, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.producto-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+.producto-card h3 {
+    font-size: 1.1em;
+    margin: 0 0 6px 0;
+    color: #222;
+    text-align: center;
+}
+.producto-card .precio {
+    color: #ff6f00;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.producto-card .precio-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.95em;
+    margin-left: 6px;
+}
+.producto-card .descuento {
+    background: orange;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 8px;
+    font-size: 0.92em;
+    margin-left: 8px;
+}
+.producto-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Acerca estilos --- */
+.acerca-main {
+    background: #f6cfb1;
+    padding: 32px 0 60px 0;
+}
+.acerca-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.acerca-articulos {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.acerca-tarjeta {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px 0 rgba(30, 90, 160, 0.09);
+    padding: 22px 26px 18px 26px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.acerca-tarjeta img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+.acerca-tarjeta h2 {
+    margin: 0 ;
+    font-size: 1.8em;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hwb(280 12% 21%);
+    text-shadow: 2px 2px 6px #ffd580, 0 1px 0 #fff;
+}
+.acerca-tarjeta ul {
+    padding-left: 16px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+}
+.acerca-tarjeta p {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+}
+.acerca-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.acerca-widget {
+    background: #fdf6e7;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px 0 rgba(30, 90, 160, 0.08);
+    padding: 18px 18px 14px 18px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.acerca-widget img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.acerca-widget h3 {
+    margin: 0 0 7px 0;
+    color: #1976d2;
+    font-size: 1.13em;
+    text-align: center;
+}
+.acerca-widget ul {
+    padding-left: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    list-style: none;
+    text-align: center;
+}
+.testimonios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 8px;
+}
+.testimonio-card {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 15px 10px;
+    box-shadow: 0 2px 10px 0 rgba(30,90,160,0.06);
+}
+.testimonio-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 66px;
+    margin-right: 2px;
+}
+.user-inicial {
+    width: 40px;
+    height: 40px;
+    background: #50a99e;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+.testimonio-fecha {
+    font-size: 0.95em;
+    color: #888;
+}
+.testimonio-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.testimonio-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.stars {
+    color: #ffc107;
+    font-size: 1.06em;
+    letter-spacing: 1px;
+}
+.compra-verificada {
+    color: #27ae60;
+    font-size: 0.98em;
+    font-weight: 500;
+}
+.testimonio-titulo {
+    font-size: 1.04em;
+    margin: 2px 0 1px 0;
+}
+.testimonio-texto {
+    color: #222;
+    font-size: 0.98em;
+    margin-bottom: 4px;
+}
+.btn-util {
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    background: #fafafa;
+    color: #333;
+    padding: 4px 14px;
+    font-size: 0.97em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s, border 0.2s;
+}
+.btn-util:hover {
+    background: #ededed;
+    border-color: #888;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    .carousel-item h1 {
+        font-size: 2rem;
+    }
+    .display-6 {
+        font-size: 1.3rem;
+    }
+    .category-circle img { width: 56px; height: 56px; }
+    .category-circle span { font-size: 0.93rem; }
+    #productos .card img { max-width: 120px; }
+    .acerca-grid { flex-direction: column; gap: 18px; padding: 0 14px; }
+}
+@media (max-width: 600px) {
+    .category-circle img { width: 40px; height: 40px; }
+    .category-circle span { font-size: 0.88rem; }
+    .acerca-main { padding: 12px 0 40px 0; }
+    .acerca-tarjeta, .acerca-widget { padding: 12px 9px 9px 9px; }
+}
+
+.navbar-brand {
+      font-family: 'Lilita One', cursive;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+    .logo-img {
+      height: 48px;
+      width: auto;
+    }
+    .cart-btn {
+      min-width: 48px;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .cart-badge {
+      font-size: 0.9em;
+      top: 7px;
+      left: 32px;
+    }
+    /* Header promo en mobile */
+    @media (max-width: 991.98px) {
+      .header-promo {
+        font-size: 1.05rem;
+        text-align: center;
+      }
+      .header-actions {
+        flex-direction: column !important;
+        gap: 8px;
+      }
+      .btn-login {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+      .navbar-search,
+      .cart-btn {
+        width: 100%;
+      }
+      .navbar-search input {
+        width: 60%;
+      }
+      .navbar-search button {
+        width: 35%;
+      }
+    }
+    /* Offcanvas scroll */
+.offcanvas.offcanvas-start {
+ background-color: #ff6f00 ;
+ font-family: 'Lilita One', cursive;
+ 
+}
+.offcanvas-header {
+    background-color: #373635;
+    color: #fff;
+}
+.offcanvas-body {
+   background-color: #ffc107;
+    color: #333;
+}
+
+/*slider*/

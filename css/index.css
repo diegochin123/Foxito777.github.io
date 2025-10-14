@@ -1,0 +1,150 @@
+/* ===== Tokens y tipografías ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap");
+
+:root{
+  --brand:#ff7a00;
+  --brand-2:#ff9f2e;
+  --ink:#0f172a;
+  --muted:#64748b;
+  --radius:16px;
+  --shadow-sm:0 6px 18px rgba(2,8,23,.06);
+  --shadow-lg:0 20px 40px rgba(2,8,23,.12);
+  --font-main:"Poppins","Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+
+  /* Paleta cálida */
+  --warm-50:#fff7ed;   /* crema muy claro */
+  --warm-75:#fff3e0;
+  --warm-100:#ffedd5;
+  --warm-200:#fed7aa;
+}
+
+html,body{font-family:var(--font-main); color:var(--ink); background:var(--warm-50); line-height:1.6}
+
+/* ================= HEADER (igual 'Acerca') ================= */
+.topbar{
+  background: linear-gradient(180deg,#1f2937 0%,#111827 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+}
+.topbar .announcement{ color:#ffd89b; letter-spacing:.2px; }
+
+.navbar.bg-warning{
+  background: linear-gradient(90deg,#ff7a00 0%,#ff9f2e 100%) !important;
+  box-shadow: 0 8px 24px rgba(2,8,23,.08);
+}
+.navbar-brand{
+  color:#fff !important; font-weight:800; letter-spacing:.3px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.2);
+  transition: transform .2s ease;
+}
+.navbar-brand:hover{ transform: translateY(-1px); }
+
+/* Links con subrayado animado */
+.navbar-nav .nav-link{
+  color:#fff !important; opacity:.92; position:relative;
+  padding:.55rem .85rem !important; transition: opacity .2s ease, transform .2s ease;
+}
+.navbar-nav .nav-link:hover{ opacity:1; transform: translateY(-1px); }
+.navbar-nav .nav-link::after{
+  content:""; position:absolute; left:.7rem; right:.7rem; bottom:.26rem; height:2px;
+  background:#fff; border-radius:2px; opacity:0; transform: scaleX(.3);
+  transform-origin:center; transition: transform .25s ease, opacity .25s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after{ opacity:1; transform: scaleX(1); }
+
+/* Buscador tipo pill */
+.header-search .form-control{
+  min-width:260px; border-radius:999px; border:0;
+  padding:.55rem 1rem; box-shadow: inset 0 0 0 1px rgba(0,0,0,.18);
+  transition: box-shadow .2s ease, background-color .2s ease;
+}
+.header-search .form-control:focus{
+  background:#fff; box-shadow: 0 0 0 4px rgba(255,255,255,.35), inset 0 0 0 2px #0f172a;
+  outline: none;
+}
+.header-search .btn{
+  border-radius:.8rem; border:1px solid rgba(0,0,0,.25);
+  background:#fff; color:#0f172a; font-weight:600;
+  transition: all .2s ease;
+}
+.header-search .btn:hover{
+  background:#0f172a; color:#fff; border-color:#0f172a;
+  box-shadow: 0 8px 20px rgba(2,8,23,.15);
+}
+
+/* Carrito */
+.cart-btn{ position:relative; border-color: rgba(0,0,0,.28); background: rgba(255,255,255,.12); }
+.cart-btn:hover{ background:#0f172a; color:#fff; border-color:#0f172a; transform: translateY(-1px); }
+.cart-badge{ position:absolute; top:-6px; right:-6px; font-size:.7rem; box-shadow:0 4px 12px rgba(220,38,38,.35); }
+
+/* Barra Delivery centrada */
+.promo-bar{
+  background: linear-gradient(180deg,#32d0ee 0%,#24b1cf 100%);
+  color:#08323a; box-shadow: inset 0 1px 0 rgba(255,255,255,.15);
+}
+.promo-bar i{ margin-right:.4rem; }
+
+/* Responsive header */
+@media (max-width: 992px){
+  .header-search{ width:100%; }
+  .header-search .form-control{ min-width:0; width:100%; }
+  .navbar .navbar-collapse{ background: rgba(0,0,0,.06); padding:.75rem; border-radius:.8rem; }
+}
+
+/* ================= FONDOS CÁLIDOS ================= */
+.bg-warm-50{ background:var(--warm-50); }
+.section-cream{
+  background: linear-gradient(180deg,#fff 0%, var(--warm-75) 100%);
+}
+.section-soft{
+  background: linear-gradient(180deg,var(--warm-50) 0%, #f5f7fb 100%);
+  border-radius: 24px;
+}
+
+/* ================= HERO / SLIDER ================= */
+.brand-title{ font-family:'Lilita One', cursive; }
+.text-gradient-warm{
+  background: linear-gradient(90deg,#ff8a00,#ff5f6d);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.carousel .img-fluid{ filter: drop-shadow(0 8px 24px rgba(2,8,23,.15)); }
+
+/* ================= TARJETAS GENERALES ================= */
+.card{
+  border:0; border-radius:var(--radius); box-shadow:var(--shadow-sm);
+  transition:transform .25s ease, box-shadow .25s ease; background:#fff;
+}
+.card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+.card-img-top{ object-fit:cover; border-top-left-radius:var(--radius); border-top-right-radius:var(--radius); }
+
+/* Títulos de sección */
+.section-title{ font-weight:800; letter-spacing:.2px; }
+
+/* Categorías (altura consistente con ratio) */
+.category-card .ratio{ border-top-left-radius:var(--radius); border-top-right-radius:var(--radius); overflow:hidden; }
+
+/* Productos (altura consistente con ratio) */
+.product-card .ratio{ border-top-left-radius:var(--radius); border-top-right-radius:var(--radius); overflow:hidden; }
+.card-price{ font-weight:700; color:#0f172a; }
+
+/* Destacado cálido */
+.highlight-card-warm{
+  background: linear-gradient(90deg,#ff9a3c 0%, #ff5f6d 100%);
+  color:#fff;
+}
+.highlight-card-warm .ratio{ border-top-left-radius:var(--radius); border-top-right-radius:var(--radius); overflow:hidden; }
+
+/* Bloque promo */
+.promo-block{
+  background: linear-gradient(180deg, #fff 0%, var(--warm-100) 100%);
+}
+
+/* ================= Galería ordenada (Visita tienda) ================= */
+/* Usamos .ratio y object-fit en HTML. Solo definimos sombras y bordes. */
+#visita-tienda .ratio{
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ================= Footer ================= */
+footer a:hover{ color:var(--brand-2) !important }

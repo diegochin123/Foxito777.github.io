@@ -1,0 +1,317 @@
+/* =========================
+   ACERCA — ESTILOS LOCALES
+   (No se sobreescriben clases globales
+   como .bg-warning, .bg-info, .btn-*)
+   ========================= */
+
+/* Tipografía base de la página (no afecta header) */
+body.bg-light {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fef6dc;
+}
+
+/* ------ Componentes reutilizables (locales) ------ */
+
+/* Círculos de categorías (si se muestran en Acerca) */
+.category-circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f8f8f8;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  margin-bottom: 4px;
+  transition: box-shadow .2s;
+}
+.category-circle span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.category-circle:hover img {
+  box-shadow: 0 6px 18px #ffb80066;
+}
+
+/* ------ Sección principal de ACERCA ------ */
+
+.acerca-main {
+  background: #f6cfb1;
+  padding: 32px 0 60px 0;
+}
+
+.acerca-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.acerca-articulos {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.acerca-tarjeta {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px 0 rgba(30, 90, 160, 0.09);
+  padding: 22px 26px 18px 26px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acerca-tarjeta img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 7px;
+}
+
+.acerca-tarjeta h2 {
+  margin: 0;
+  font-size: 1.8em;
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hwb(280 12% 21%);
+  text-shadow: 2px 2px 6px #ffd580, 0 1px 0 #fff;
+}
+
+.acerca-tarjeta ul {
+  padding-left: 16px;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+}
+
+/* Sidebar (si lo usas en esta página) */
+.acerca-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.acerca-widget {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.07);
+  padding: 16px 18px;
+}
+
+/* ------ Productos destacados locales (opcional en Acerca) ------ */
+
+.productos-busqueda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 32px 0;
+}
+
+.producto-card {
+  border: 2px solid #ff9100;
+  border-radius: 14px;
+  padding: 18px;
+  width: 260px;
+  background: #fffbe7;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255,111,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.producto-card h3 {
+  font-size: 1.1em;
+  margin: 0 0 6px 0;
+  color: #222;
+  text-align: center;
+}
+
+.producto-card .precio {
+  color: #ff6f00;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.producto-card .precio-original {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.95em;
+  margin-left: 6px;
+}
+
+.producto-card .descuento {
+  background: orange;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 0.92em;
+  margin-left: 8px;
+}
+
+.producto-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------ Utilidades locales ------ */
+
+/* Botón cuadrado para buscador/carrito móvil (sólo local) */
+.square-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Asegura que la barra sticky del header tenga prioridad en stacking
+   sin alterar estilos globales del header */
+.sticky-top { z-index: 1020; }
+
+/* Responsivo básico de la rejilla local */
+@media (max-width: 992px){
+  .acerca-grid {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 16px;
+  }
+}
+
+/* =========================================================
+   ACERCA — Mejora visual con paleta cálida para niños
+   (NO modifica clases globales del header/Bootstrap)
+   ========================================================= */
+
+/* Paleta cálida local (apoyada en tokens globales) */
+:root{
+  --warm-1: #fff2d8;   /* crema muy suave */
+  --warm-2: #ffe4b8;   /* durazno suave */
+  --warm-3: #ffd199;   /* naranja pastel */
+  --ink-2 : #334155;   /* texto suave */
+}
+
+/* ---------- HERO ---------- */
+/* Añade la clase .acerca-hero al <section> del hero (ver paso 2) */
+.acerca-hero{
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(255,204,128,.25), transparent 60%),
+    radial-gradient(1200px 600px at 90% 0%, rgba(255,183,77,.22), transparent 60%),
+    linear-gradient(180deg, var(--warm-1), #fff);
+  border-bottom: 1px solid rgba(15,23,42,.06);
+}
+.acerca-hero .display-5{
+  letter-spacing:.2px;
+}
+.acerca-hero .lead{
+  color: var(--ink-2);
+}
+
+/* ---------- CARDS PRINCIPALES (Misión / Visión / Valores) ---------- */
+main .card{
+  border: 0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(2,8,23,.08);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  position: relative;
+  overflow: hidden;
+}
+main .card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(2,8,23,.12);
+}
+
+/* Borde superior “ribbon” cálido */
+main .card::before{
+  content:"";
+  position:absolute; inset:0 0 auto 0; height:8px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+}
+
+/* Imágenes de card */
+main .card-img-top{
+  border-radius: 14px;
+  margin: 12px 12px 0 12px;
+  height: 220px; object-fit: cover;
+}
+
+/* Títulos dentro de cards */
+main .card-title{
+  font-family: 'Lilita One', cursive;
+  letter-spacing:.3px;
+  margin-bottom:.25rem;
+}
+
+/* Texto */
+main .card-text{
+  color: #475569;
+}
+
+/* Listas de “¿Por qué elegirnos?” y “Valores” */
+main .list-group-item{
+  border: 0;
+  padding: .55rem .25rem;
+  color: #334155;
+}
+main .list-group-item + .list-group-item{
+  border-top: 1px dashed rgba(2,8,23,.08);
+}
+
+/* Panel “Valores” con fondo suave y separación */
+.acerca-valores{
+  background: linear-gradient(180deg, #fff, var(--warm-1));
+}
+.acerca-valores .card-body{
+  padding-top: 1rem;
+}
+
+/* ---------- TARJETAS GRANDES (fila de 12 col) ---------- */
+/* Si usas una card de 12 columnas para Valores, realzamos el borde */
+main .col-12 .card{
+  background: #fff;
+  border: 1px solid rgba(255,183,77,.25);
+}
+
+/* ---------- SIDEBAR (si existiera) ---------- */
+.aside-card{
+  background: #fffdf8;
+  border: 1px solid rgba(255,183,77,.35);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(2,8,23,.06);
+}
+
+/* ---------- SEPARADORES Y BADGES ---------- */
+.section-divider{
+  height: 14px; border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  opacity: .25;
+}
+.badge-kid{
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  color:#111; font-weight:700;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px){
+  main .card-img-top{ height: 200px; margin: 10px 10px 0 10px; }
+}
+@media (max-width: 576px){
+  .acerca-hero .display-5{ font-size: 2rem; }
+}

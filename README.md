@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Foxito777.github.io
 Plataforma Web JuledToys publicado en GitHub pages
 #
@@ -70,3 +71,72 @@ El equipo está trabajando con **Java JDK 21**.
   ```
 
 ---
+=======
+# Proyecto Juled Toys — Guía de trabajo en equipo
+
+## Reglas principales
+1. No trabajar directamente en la rama `main`.
+2. Cada integrante debe crear su propia rama para trabajar en una tarea.
+3. Los cambios solo llegan a `main` mediante Pull Request (PR) y revisión de un compañero.
+4. No borrar el archivo `.gitignore`.
+5. El archivo `enlaces.txt` contiene la página de referencia y el tablero Kanban en Canva. Cada integrante debe actualizar el tablero cuando empieza y termina una tarea.
+
+## Flujo de trabajo
+1. **Clonar el repositorio (primera vez):**
+   ```bash
+   git clone https://github.com/<USUARIO>/<REPO>.git
+   cd <REPO>
+   ```
+
+2. **Crear una nueva rama para trabajar:**
+   ```bash
+   git checkout -b feature/nombre-tarea
+   ```
+
+3. **Guardar cambios:**
+   ```bash
+   git add .
+   git commit -m "Descripción del cambio"
+   ```
+
+4. **Subir rama al repositorio:**
+   ```bash
+   git push -u origin feature/nombre-tarea
+   ```
+
+5. **Abrir un Pull Request (PR) en GitHub:**
+   - De tu rama hacia `main`.
+   - Esperar revisión de un compañero.
+   - Hacer merge después de la aprobación.
+
+6. **Actualizar tu copia local con `main`:**
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout feature/nombre-tarea
+   git merge main   # o git rebase main
+   ```
+
+7. **Eliminar la rama usada y crear una nueva:**
+   - Una vez que tu PR fue aprobado y mergeado, elimina tu rama local:
+     ```bash
+     git branch -d feature/nombre-tarea
+     ```
+   - Actualiza `main`:
+     ```bash
+     git checkout main
+     git pull origin main
+     ```
+   - Crea una nueva rama desde lo más actualizado:
+     ```bash
+     git checkout -b feature/nueva-tarea
+     ```
+
+## Consejos importantes
+- No subir archivos basura, respeta el `.gitignore`.
+- Mantener mensajes de commit claros y cortos.
+- Revisar los PR antes de hacer merge.
+- Actualizar el tablero Kanban en Canva de acuerdo al avance.
+- Eliminar ramas ya mergeadas y trabajar siempre en una nueva basada en la última versión de `main`. 
+
+>>>>>>> 0844ecc (Portafolio)
