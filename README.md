@@ -79,7 +79,6 @@ El equipo está trabajando con **Java JDK 21**.
 2. Cada integrante debe crear su propia rama para trabajar en una tarea.
 3. Los cambios solo llegan a `main` mediante Pull Request (PR) y revisión de un compañero.
 4. No borrar el archivo `.gitignore`.
-5. El archivo `enlaces.txt` contiene la página de referencia y el tablero Kanban en Canva. Cada integrante debe actualizar el tablero cuando empieza y termina una tarea.
 
 ## Flujo de trabajo
 1. **Clonar el repositorio (primera vez):**
@@ -136,7 +135,6 @@ El equipo está trabajando con **Java JDK 21**.
 - No subir archivos basura, respeta el `.gitignore`.
 - Mantener mensajes de commit claros y cortos.
 - Revisar los PR antes de hacer merge.
-- Actualizar el tablero Kanban en Canva de acuerdo al avance.
 - Eliminar ramas ya mergeadas y trabajar siempre en una nueva basada en la última versión de `main`. 
 
 >>>>>>> 0844ecc (Portafolio)
