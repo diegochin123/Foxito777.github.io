@@ -1,6 +1,11 @@
 README del Proyecto Juled Toys
 
 Plataforma Web Juled Toys publicada en GitHub Pages.
+Problematica:
+Juled TOYS SRL enfrenta problemas operativos debido a la gestión manual y fragmentada de inventarios y ventas mediante registros físicos no integrados. Esto genera inconsistencias de datos, duplicidad de registros, errores de stock y pérdidas de productos. El proceso de atención al cliente es lento y propenso a errores, causando demoras en consultas de disponibilidad y registro de ventas. Estas deficiencias limitan la eficiencia operativa y la capacidad de crecimiento de la empresa en el mercado local de Ayacucho.
+
+
+
 
 Este repositorio contiene el desarrollo del sistema web Juled Toys, construido con HTML, CSS, JavaScript y tecnologías modernas. El backend se trabaja con Java JDK 21.
 
